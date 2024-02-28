@@ -10,7 +10,7 @@ namespace TaskTracker.Interfaces.Services
 {
     public interface ITaskService
     {
-        public  Task<IList<GetTaskListResponse>> GetTaskList(IQueryHandler<IList<GetTaskListResponse>> queryHandler);
+        public  Task<List<GetTaskListResponse>> GetTaskList(IQueryHandler<List<GetTaskListResponse>> queryHandler);
 
         public  Task CreateTask(ICommandHandler<CreateTaskRequest> commandHandler);
 

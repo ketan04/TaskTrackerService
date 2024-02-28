@@ -10,7 +10,7 @@ using TaskTracker.Models.Dto.Task;
 
 namespace TaskTracker.Services.TaskService.Query
 {
-    public class GetTaskListQuery : IQueryHandler<IList<GetTaskListResponse>>
+    public class GetTaskListQuery : IQueryHandler<List<GetTaskListResponse>>
     {
         private readonly ITaskRepository taskRepository;
 
@@ -19,14 +19,14 @@ namespace TaskTracker.Services.TaskService.Query
             this.taskRepository = taskRepository;
         }
 
-        public async Task<IList<GetTaskListResponse>> ExecuteAsync()
+        public async Task<List<GetTaskListResponse>> ExecuteAsync()
         {
             return TransformEntityToQueryResponseModel(await this.taskRepository.GetTaskList());
         }
 
-        private IList<GetTaskListResponse> TransformEntityToQueryResponseModel(IList<BaseTask> tasks)
+        private List<GetTaskListResponse> TransformEntityToQueryResponseModel(List<BaseTask> tasks)
         {
-            IList<GetTaskListResponse> responseTaskList = new List<GetTaskListResponse>();
+            List<GetTaskListResponse> responseTaskList = new List<GetTaskListResponse>();
             foreach (BaseTask task in tasks)
             {
                 responseTaskList.Add(new GetTaskListResponse()

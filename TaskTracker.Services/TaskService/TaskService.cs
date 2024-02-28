@@ -14,7 +14,7 @@ namespace TaskTracker.Services.TaskService
     public class TaskService : ITaskService
     {
 
-        public async Task<IList<GetTaskListResponse>> GetTaskList(IQueryHandler<IList<GetTaskListResponse>> queryHandler)
+        public async Task<List<GetTaskListResponse>> GetTaskList(IQueryHandler<List<GetTaskListResponse>> queryHandler)
         {
             return await queryHandler.ExecuteAsync();
         }

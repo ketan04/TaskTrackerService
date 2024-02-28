@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskTracker.Interfaces", ".
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskTracker.Database.Migrations", "..\TaskTracker.Database.Migrations\TaskTracker.Database.Migrations.csproj", "{BF029156-5BDF-44C5-8E0B-D4A65263B360}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskTracker.UnitTest", "..\TaskTracker.UnitTest\TaskTracker.UnitTest.csproj", "{8A180287-4F14-43D1-B2D6-818E4EC57218}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{BF029156-5BDF-44C5-8E0B-D4A65263B360}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF029156-5BDF-44C5-8E0B-D4A65263B360}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF029156-5BDF-44C5-8E0B-D4A65263B360}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A180287-4F14-43D1-B2D6-818E4EC57218}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A180287-4F14-43D1-B2D6-818E4EC57218}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A180287-4F14-43D1-B2D6-818E4EC57218}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A180287-4F14-43D1-B2D6-818E4EC57218}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -93,6 +99,7 @@ Global
 		{BE4326EE-9B09-4E63-AEBF-FD4651AF071D} = {D9253403-9739-4CB9-91E8-298AACD92DEB}
 		{D7C6E81A-74A5-43A2-8C68-743C14EBADE7} = {D9253403-9739-4CB9-91E8-298AACD92DEB}
 		{BF029156-5BDF-44C5-8E0B-D4A65263B360} = {45B28619-BCB5-4139-9915-B45C7CE02CEE}
+		{8A180287-4F14-43D1-B2D6-818E4EC57218} = {BDAE3740-C92E-461A-B3DB-BCEE0D61106C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5D03C444-578B-47AE-8829-2FD60D6216E3}

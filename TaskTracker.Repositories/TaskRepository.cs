@@ -33,7 +33,7 @@ namespace TaskTracker.Respositories
             }
         }
 
-        public async Task<IList<BaseTask>> GetTaskList()
+        public async Task<List<BaseTask>> GetTaskList()
         {
             try
             {

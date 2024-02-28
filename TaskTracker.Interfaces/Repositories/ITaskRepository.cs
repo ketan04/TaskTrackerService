@@ -10,7 +10,7 @@ namespace TaskTracker.Interfaces.Repositories
 {
     public  interface ITaskRepository
     {
-        public Task<IList<BaseTask>> GetTaskList();
+        public Task<List<BaseTask>> GetTaskList();
 
         public Task<int> CreateTask(BaseTask task);
 
