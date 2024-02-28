@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TaskTracker.DataAccess\TaskTracker.DataAccess.csproj" />
+    <ProjectReference Include="..\TaskTracker.Interfaces\TaskTracker.Interfaces.csproj" />
+    <ProjectReference Include="..\TaskTracker.Repositories\TaskTracker.Repositories.csproj" />
+    <ProjectReference Include="..\TaskTracker.Services\TaskTracker.Services.csproj" />
+  </ItemGroup>
+
+</Project>
